@@ -7,7 +7,15 @@ import { Toaster } from 'react-hot-toast'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AppFirebase />
-    <Toaster position="top-right" />
+    <Toaster 
+      position="top-right"
+      toastOptions={{
+        duration: 3000,
+        style: {
+          background: '#363636',
+          color: '#fff',
+        },
+        success: {
           duration: 3000,
           iconTheme: {
             primary: '#10b981',
@@ -23,5 +31,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         },
       }}
     />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
